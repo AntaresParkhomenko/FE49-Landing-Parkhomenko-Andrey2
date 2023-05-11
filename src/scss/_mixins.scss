@@ -1,0 +1,241 @@
+@mixin a {
+color: $white;    
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+line-height: 15px;
+align-items: center;
+text-transform: uppercase;
+}
+
+@mixin h1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: $_64px;
+    line-height: 75px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+}
+
+@mixin des-h1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $_24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $white;
+}
+
+@mixin download {
+    width: 100%;
+    height: 100%;
+    background: $red;
+    margin: auto;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: $_24px;
+    line-height: 28px;
+    display: block;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    padding: 23px 0;
+}
+
+@mixin active {
+    background: $red;
+    box-shadow: 4px 4px 30px $red;
+}
+
+@mixin icons-title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: $_24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: $black;
+}
+
+@mixin icons-description {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $_18px;
+    line-height: 21px;
+    color: $grey;
+}
+
+@mixin h3 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: $_24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+}
+
+@mixin h3-des {
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $_18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $white;
+}
+
+@mixin h3-cart {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: $_24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: $black;
+}
+@mixin sub-title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $_18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: $red;
+}
+@mixin cart-des {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: $_18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: $grey;
+}
+
+@mixin slider-content {
+    font-family: 'Cardo';
+    font-style: italic;
+    font-weight: 400;
+    font-size: $_36px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: $white;
+}
+
+@mixin author {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: $_13px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: $white;
+}
+
+@mixin bullet {
+    width: 14px;
+    height: 14px;
+    background-color: $white;
+    border: 1px solid $bullet;
+}
+
+@mixin download-title {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: $_30px;
+    line-height: 12px;
+    text-align: center;
+    color: $black;
+}
+
+@mixin download-subtitle {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: $_14px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $black;
+}
+@mixin download-wrap {
+        width: 370px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    @mixin footer-title {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: $_18px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white;
+    }
+
+    @mixin fotter-subtitle {
+        
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: $_18px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: capitalize;
+        color: $white;
+    }
+
+    @mixin footer-age-text {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: $_18px;
+        line-height: 21px;
+        text-align: center;
+        text-transform: capitalize;
+        color: $grey-dis;
+    }
+    @mixin footer-age-text-after {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: $_18px;
+        line-height: 21px;
+        text-align: center;
+        text-transform: capitalize;
+        color: $white;
+    }

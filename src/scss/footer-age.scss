@@ -1,0 +1,30 @@
+.footer-age {
+    padding: 24px 0;
+    background-color: $footer-background-age;
+
+    .footer-age-wrap {
+        width: 370px;
+        margin: auto;
+        text-align: center;
+        @media (max-width: 576px) {
+            margin-bottom: 15px;
+            width: 279px;
+        }
+        
+
+        p {
+            @include footer-age-text;
+            @media (max-width: 1200px) {
+                font-size: $_14px;
+            }
+
+            span {
+                color: $white;
+                @media (max-width: 1200px) {
+                    font-size: $_14px;
+                }
+            }
+        }
+        
+    }
+}

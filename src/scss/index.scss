@@ -1,0 +1,54 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    }
+
+    @import "../scss/cdn";
+    @import "../scss/var";
+    @import "../scss/mixins";
+    @import "../scss/var-fontsize";
+    @import "../scss/titular";
+    @import "../scss/icons.scss";
+    @import "../scss/works.scss";
+    @import "../scss/questionnaire.scss";
+    @import "../scss/testimonials.scss";
+    @import "../scss/download.scss";
+    @import "../scss/footer.scss";
+    @import "../scss/footer-age.scss";
+
+html {
+    font-family: 'Cardo', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+    .container {
+        max-width: 1320px;
+        padding: 0 15px;
+        margin: auto;
+        position: relative;
+        z-index: 10;
+
+        @media (max-width: 1200px) {
+            max-width: 1140px;
+        }
+        @media (max-width: 992px) {
+            max-width: 960px;
+        }
+        @media (max-width: 768px) {
+                max-width: 100%;
+                
+            }
+        
+        @media (max-width: 576px) {
+                max-width: 540px;
+            }
+        
+        @media (max-width: 320px) {
+                max-width: 100%;
+            }
+    }

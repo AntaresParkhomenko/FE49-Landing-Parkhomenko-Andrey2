@@ -1,0 +1,56 @@
+.start-download {
+    // display: none;
+    padding: 114px 0;
+    @media (max-width: 768px) {
+        padding: 55px 0;
+    }
+
+    .start-download-info {
+        max-width: 1170px;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+
+        .start-download-info__title {
+            @include download-title;
+            margin-bottom: 25px;
+            @media (max-width: 768px) {
+                font-size: $_18px;
+                line-height: 18px;                
+            }
+        }
+        .start-download-info__subtitle {
+            @include download-subtitle;
+            margin-bottom: 50px;
+            @media (max-width: 768px) {
+                font-size: $_13px;
+                line-height: 16px;                
+            }
+        }
+    }
+    .download {
+        width: 369px;
+        height: 78px;
+        margin: auto;
+        @media (max-width: 1200px) {
+            width: 313px;
+        }
+        @media (max-width: 320px) {
+            width: 279px;
+        }
+        
+        a {
+            @include download;
+            @media (max-width: 1200px) {
+                font-size: $_18px;
+            }   
+            
+            &:hover {
+                background: $action-border;
+            }
+            &:active {
+                @include active;
+            }
+        }
+    }
+}

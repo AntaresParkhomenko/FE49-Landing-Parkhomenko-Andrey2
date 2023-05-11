@@ -1,0 +1,101 @@
+.testimonials {
+    // display: none;
+    overflow-x: hidden;
+
+    .swiper {
+        width: 100%;
+        height: 490px;
+        @media (max-width: 768px) {
+            max-width: 100%;
+        }
+        
+        
+        .slider__wrap {
+            display: flex;            
+            height: 490px;
+            padding-bottom: 45px;
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+            
+
+            .slider__img {
+                width: 50%;
+                height: 100%;
+                overflow: hidden;
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
+              
+                img {
+                  object-fit: cover;
+                  object-position: center;
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+              .slider__content {
+                width: 50%;
+                background-color: $slider-background;
+                color: $white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
+
+                .slider-content__wrap {
+                    width: 471px;                   
+                    text-align: left;
+                    display: flex;
+                    flex-direction: column;
+                    @media (max-width: 992px) {
+                        width: 300px;                        
+                    }
+                    @media (max-width: 768px) {
+                        padding: 15px 0;
+                    }
+
+
+                    .slider-content__info {
+                        @include slider-content;
+                        margin-bottom: 15px;
+                        @media (max-width: 992px) {
+                            font-size: $_24px;
+                            line-height: 32px;
+                        }
+                        @media (max-width: 768px) {
+                            padding: 0 25px;
+                            font-weight: 400;
+                        }
+                    }
+                    .slider-content__author {
+                        @include author;
+                        @media (max-width: 768px) {
+                            font-style: $_12px;
+                        }
+                    }                                        
+                }
+            }
+        }
+        
+        .swiper-pagination-bullet{
+            @include bullet;
+            
+        }
+        .swiper-pagination-bullet-active {
+            background-color: $bullet;
+        }
+
+        .swiper-button-next, .swiper-button-prev {
+            color: $white;
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+                             
+    }
+}
+ 
+  
